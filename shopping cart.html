@@ -1,0 +1,121 @@
+
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="style.css">
+    <title>購物車</title>
+    <script src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js">
+    
+ //   <script>
+//      show_cart_data()
+//      function show_cart_data() {
+//        var cart_data_element = document.getElementById('cart_data');
+//        cart_data_element.innerHTML = '<tr><td>html data</tr></td>';
+//      }
+//      document.getElementById('cart_data').innerHTML = '<tr><td>html data</tr></td>';  </script>
+  </head>
+	<body background="image/祥雲.png">
+    <div id="main">
+  <table  width="100%" align=center>
+      <tr class="title">
+		  <td>	
+        <b><a href="index.html">首頁</a></b>       
+        </td>
+         <td>    
+			 <b><a href="Company philosophy.html">公司理念</a></b>    
+        </td>
+        <td >
+          <b><a href="shopping cart.html">購物車</a></b>
+        </td>
+    
+        <td>
+          <b><a href="location.html">門市據點</a></b>
+        </td>
+        <td>
+          <b><a href="menu.html">菜單</a></b>
+        </td>
+        <td>
+          <b><a href="Customer Service.html">客服專區</a></b>
+        </td>
+      </tr>
+    </table>
+      
+      <table id="cart_data" align=center >
+        <tr>
+          <td>
+            <span onclick=""></span><br><br>
+          </td>
+        </tr>
+      </table>
+      <p class="cart_msg">購物車沒有商品...</p>
+      <table id="shopping_cart" border="2"  height="50" width="90%" align=center 
+style="text-align:center;position:absolute;top:50px;left:10px;" bgcolor="white" 
+   ;   >
+        
+        <tr>
+          <th style="background-color:lavender">
+            品項
+          </th>
+          <th style="background-color:lavender">
+            數量
+          </th>
+          <th style="background-color:lavender">
+            金額
+          </th>
+        </tr>
+      </table>
+		</div>
+      <div class="btn_1" style="position:absolute;top:450px;left:600px;">
+
+
+  
+      
+       <input type="button" value="繼續購物" onclick="location.href='menu.html'"  style="width=50px height:50px;font-size:20px;background-color: aliceblue"><br> 
+		<br>
+
+<!--
+        <form action="list.html" method="post">
+         
+          <input type="submit" name="直接結帳" style="width=50px height:50px;font-size:18px;background-color: antiquewhite" 
+           >
+-->
+       <input type="button" value="結帳" onclick="location.href='list.html'" style="width=50px height:50px;font-size:18px;background-color: aliceblue" >
+        
+		<button onclick="window.open('list.html', '', 'width=300, height=300');">選值</button> 
+		<br>
+      </div>
+      
+    <div class="imgs"><img src="./image/S__1531907.jpg" height=300px width="1500px"></div>
+    
+  <div  class="footer">總公司地址：100台北市中正區濟南路一段321號
+
+    <a href="https://www.facebook.com/NTUB1917/"><img src="image/facebook.png" width="50" heigh="50"></a>
+    <a href="https://www.instagram.com/explore/tags/%E5%9C%8B%E7%AB%8B%E8%87%BA%E5%8C%97%E5%95%86%E6%A5%AD%E5%A4%A7%E5%AD%B8/top/"><img src="image/instagram.png" width="50" heigh="50" ></a>
+  </div>
+  <script src="https://www.gstatic.com/firebasejs/6.0.2/firebase-app.js"></script>
+  <script src="app.js"></script>
+    <script type="application/javascript">
+//            Cookies.remove('cart');
+      var products = Cookies.getJSON('cart') ? Cookies.getJSON('cart') : [];
+      if (products.length == 0) {
+        document.getElementById("shopping_cart").style.display = "none";
+      }else{
+		document.getElementsByClassName("cart_msg")[0].style.display = "none";
+		  
+		var shopping_cart = document.getElementById("shopping_cart");
+		
+		 for(var key in products) {
+			 var pd = products[key];
+			 var e = document.createElement('tr');
+			e.innerHTML = "<td>" + pd["name"] + "</td><td>" + pd["amount"] + "</td><td>" + pd["price"] * pd["amount"] + "</td>";
+			shopping_cart.appendChild(e);
+		 }
+		
+	  }
+		
+		
+      
+    </script>
+  </body>
+</html>

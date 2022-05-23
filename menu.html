@@ -1,0 +1,162 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js"></script>
+    <meta charset="utf-8">
+    <title>菜單</title>
+    <link rel="stylesheet" href="style.css"> 
+    <script>
+//      Cookies.remove('cart');
+      
+      function add_to_cart(product_name) {
+        // [{"name": "熟成紅茶", "amount": 1, "price": 30}, {"name": "太妃紅茶", "amount": 1, "price": 30}]
+        var products = Cookies.getJSON('cart');
+        if (products) {
+        }else{
+          products = [];
+        }
+        
+        var in_cart = false;
+        for(key in products) {
+          var pd = products[key]
+          if(pd["name"] == product_name) {
+            pd["amount"] += 1;
+            in_cart = true;
+          }
+        }
+        
+        if (in_cart == false) {
+          products.push({"name": product_name, "amount": 1, "price": 30});
+        }
+        
+        Cookies.set('cart', products);
+        
+        alert(product_name + " 已加入購物車");
+        document.getElementById("cart").textContent = "購物車(" + products.length + ")";
+        
+        //alert(Cookies.get('cart'));
+      }
+    </script>
+  </head>
+<body background="image/花紋.jpg">
+    <div id="bg">
+    <div id="main">
+       <table  width="100%" align=center>
+      <tr class="title" >
+		  <td>	
+        <b><a href="index.html">首頁</a></b>       
+        </td>
+         <td>    
+          <b><a href="Company philosophy.html">公司理念</a></b>       
+        </td>
+        <td>
+          <b><a href="shopping cart.html">購物車</a></b>
+        </td>
+        
+        <td>
+          <b><a href="location.html">門市據點</a></b>
+        </td>
+        <td>
+          <b><a href="menu.html">菜單</a></b>
+        </td>
+        <td>
+          <b><a href="Customer Service.html">客服專區</a></b>
+        </td>
+      </tr>
+    </table>
+      <div  class="menu1" >
+      <table>
+      <br><br>
+      <tr>
+		  <font size="5">紅茶類</font>
+		  <br>
+	 </tr>
+      <tr>
+        <span onclick="add_to_cart('熟成紅茶')">熟成紅茶..............................................................$50</span><br><br>
+		 <font size="3">解炸物/燒烤肉類油膩，茶味濃郁
+		  </font>
+     <br><br>
+      </tr>
+      <tr>
+        <span onclick="add_to_cart('鴉片紅茶')">鴉片紅茶..............................................................$50</span><br><br>
+		  <font size="3">去除海鮮羶腥味，茶味較淡帶花香</font>
+        <br><br>
+      </tr>
+      <tr>
+        <span onclick="add_to_cart('太妃紅茶')">太妃紅茶..............................................................$50</span><br><br>
+		  <font size="3">咖啡與茶的神祕搭配</font>
+        <br><br>
+      </tr>
+      <br>
+      <tr>
+		  <font size="5">冬茶類</font><br>
+	 </tr>
+      <tr>
+        <span onclick="add_to_cart('熟成冷露')">熟成冷露..............................................................$60</span><br><br>
+		  <font size="3">手工冬瓜與茶更神秘比例搭配</font>
+        <br><br>
+      </tr>
+      <tr>
+        <span onclick="add_to_cart('雪花冷露')">雪花冷露..............................................................$50</span><br><br>
+		  <font size="3">手工冬瓜獨奏</font>
+        <br><br>
+      </tr>
+      <tr>
+        <span onclick="add_to_cart('春芽冷露')">春芽冷露..............................................................$55</span><br><br>
+		  <font size="3">手工冬瓜綠茶</font>
+        <br><br>
+      </tr>
+      <tr>
+        <span onclick="add_to_cart('春芽綠茶')">春芽綠茶..............................................................$50</span><br><br>
+		  <font size="3">綠茶，糸糸中帶綠</font>
+        <br><br>
+      </tr>
+      <tr>
+        <span onclick="add_to_cart('春梅冰茶')">春梅冰茶..............................................................$50</span><br><br>
+		  <font size="3">春梅與冬瓜相遇</font>
+        <br><br>
+      </tr>
+      <tr>
+        <span onclick="add_to_cart('冷露歐蕾')">冷露歐蕾..............................................................$55</span><br><br>
+		  <font size="3">手工冬瓜與鮮奶</font>
+        <br><br>
+      </tr>
+      <br>
+      <tr>
+		  <font size="5">奶茶類</font><br>
+	 </tr>
+      <tr>
+        <span onclick="add_to_cart('熟成歐蕾')">熟成歐蕾..............................................................$40</span><br><br>
+		  <font size="3">熟成鮮奶茶</font>
+        <br><br>
+      </tr>
+      <tr>
+        <span onclick="add_to_cart('白玉歐蕾')">白玉歐蕾..............................................................$60</span><br><br>
+		  <font size="3">珍奶不解釋</font>
+        <br><br>
+      </tr>
+      <tr>
+        <span onclick="add_to_cart('熟成檸果')">熟成檸果..............................................................$70</span><br><br>
+		  <font size="3">每日限量的鮮檸紅茶，整個檸檬搭配7分糖最佳</font>
+        <br><br>
+      </tr>
+    </table>
+    </div>
+    </div>
+    </div>
+   
+    <div id="car" align=right>
+      <a href="shopping cart.html"><img src="image/shop_icon.png" height="20%" ></a>
+    </div>
+    
+    <div  class="footer">總公司地址：100台北市中正區濟南路一段321號
+
+      <a href="https://www.facebook.com/NTUB1917/"><img src="image/facebook.png" width="50" heigh="50"></a>
+      <a href="https://www.instagram.com/explore/tags/%E5%9C%8B%E7%AB%8B%E8%87%BA%E5%8C%97%E5%95%86%E6%A5%AD%E5%A4%A7%E5%AD%B8/top/"><img src="image/instagram.png" width="50" heigh="50" ></a>
+    </div>
+    <script src="https://www.gstatic.com/firebasejs/6.0.2/firebase-app.js"></script>
+    <script src="app.js"></script>
+  </body>
+  
+</html>

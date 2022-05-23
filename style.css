@@ -1,0 +1,245 @@
+/* Fonts from Google Fonts - more at https://fonts.google.com */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
+@import url('https://fonts.googleapis.com/css?family=Merriweather:400,700');
+
+<style > html {
+    position: relative;
+    height: 100%;
+}
+
+body {
+    /*  padding-bottom: 50px;*/
+}
+
+.footer {
+    /* 在此新增您的留言 */
+    /*
+  position: absolute;
+  bottom: 0;
+  height: 50px;
+*/
+    /*
+  position: fixed;
+  bottom: 0;
+*/
+}
+
+.text1 {
+    position: relative;
+    top: 0px;
+    width: 600px;
+
+}
+
+.text2 {
+
+    position: absolute;
+    top: 403px;
+    left: 650px;
+    width: 600px;
+}
+
+a:hover {
+    background-color: hotpink;
+}
+
+/*
+.title{
+  width: 100%;
+  background-color: blue;
+  text-align: center;
+}
+*/
+
+.image {
+    padding-right: 5px;
+    padding-top: 5px;
+    padding-left: 5px;
+    padding-bottom: 5px
+}
+
+.text {
+    text-align: left;
+    font-family: 'Pacifico', cursive;
+    font-size: 90%;
+
+}
+
+.video {
+    margin: auto;
+}
+
+.title {
+    font-family: 'Lobster', cursive;
+    font-size: 110%;
+
+}
+
+.menu1 {
+    font-family: 'Indie Flower', cursive;
+    background-image: url(image/cup.png);
+    background-repeat: no-repeat;
+
+    width: 60%;
+    height: 70%;
+    background-color: white;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-size: 18px;
+    color: maroon;
+    position: relative;
+    left: 10px;
+    top: 50px;
+
+}
+
+}
+
+#car {
+
+    top: -50px;
+    left: 300px;
+
+}
+
+#shopping cart {
+
+    text-align: center
+}
+
+.btn_1 {
+    position: absolute top:-600px;
+    left: auto;
+
+}
+
+.content {
+    padding: 1px;
+    margin: 1px;
+}
+
+#img1 {
+    position: relative;
+    top: 10px;
+    left: 60px;
+
+}
+
+#east {
+    background-color: white;
+    height: 200px;
+    width: 400px;
+    position: relative;
+    top: -520px;
+    left: 550px;
+    font-family: 'Indie Flower', cursive;
+}
+
+#img1 {
+    position: relative;
+    top: 10px;
+    left: 60px;
+
+}
+
+#north {
+    background-color: white;
+    height: 200px;
+    width: 400px;
+    position: relative;
+    top: 50px;
+    left: 0px;
+    font-family: 'Indie Flower', cursive;
+
+}
+
+#img2 {
+    position: absolute;
+    top: 400px;
+    left: 510px;
+   
+
+}
+
+#center {
+    background-color: white;
+    height: 200px;
+    width: 400px;
+    position: absolute;
+    top: 800px;
+    left: 550px;
+    font-family: 'Indie Flower', cursive;
+}
+
+#img3 {
+    background-color: bisque;
+    height: 200px;
+    width: 300px;
+    position: relative;
+    top: 50px;
+    left: 0px;
+}
+
+#weat {
+    background-color: white;
+    position: relative;
+    height: 200px;
+    width: 400px;
+    top: 200px;
+    left: 0px;
+    font-family: 'Indie Flower', cursive;
+}
+
+#img4 {
+    position: relative;
+    top: 0px;
+    left: 510px;
+    
+}
+
+#south {
+    background-color: white;
+    position: absolute;
+    height: 200px;
+    width: 400px;
+    top: 1550px;
+    left: 550px;
+    font-family: 'Indie Flower', cursive;
+}
+
+#img5 {
+    position: relative;
+    top: 50px;
+    left: 0px;
+
+}
+
+#gss {
+    position: absolute;
+    background-size: 100% 100%;
+    background-position: center;
+
+}
+
+#text {
+    background-color: rgb(0, 152, 50);
+    opacity: 0.6;
+    width: 170px;
+    background-color: lightgrey;
+    -webkit-writing-mode: vertical-rl;
+    writing-mode: vertical-rl;
+    position: relative;
+    left: 1000px;
+    font-family: 'Indie Flower', cursive;
+
+}
+
+.imgs {
+    position:absolute;
+    left: 10%;
+    top:60%
+    
+}
+
+</style >

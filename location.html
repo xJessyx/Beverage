@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>location</title>
+    <link rel="stylesheet" href="style.css"> 
+    <title>門市據點</title>
+    <style>
+        body {
+            margin: 0px;
+            padding: 0px;
+            height: auto;
+            background-image: url(./image/k.png), url(./image/k1.png), url(./image/k2.png), url(./image/k3.png);
+            background-repeat: no-repeat, no-repeat;
+            background-position: left 20px, right 290px, left 1220px, right 1420px;
+            background-color: #e6d2d5
+        }
+
+        .header {
+            position: relative;
+            width: 600px;
+            height: 50px;
+        }
+
+        .h2 {
+            top: 400px;
+            position: absolute
+        }
+
+        hr.a {
+            border: 0;
+            height: 1px;
+            background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+        }
+    </style>
+
+  </head>
+  <body>
+    <div id="main">
+      <table  width="100%" align=center>
+      <tr class="title">
+		  <td>	
+        <b><a href="index.html">首頁</a></b>       
+        </td>
+         <td>    
+          <b><a href="Company philosophy.html">公司理念</a></b>       
+        </td>
+        <td>
+          <b><a href="shopping cart.html">購物車</a></b>
+        </td>
+       
+        <td>
+          <b><a href="location.html">門市據點</a></b>
+        </td>
+        <td>
+          <b><a href="menu.html">菜單</a></b>
+        </td>
+        <td>
+          <b><a href="Customer Service.html">客服專區</a></b>
+        </td>
+      </tr>
+    </table>
+    
+    <div class="map" style="text-align:center ;">
+
+        <h2><p>門市據點</p></h2>
+        <hr class="a">
+        <h3>
+            <p>濟南店</p>
+        </h3>
+        <img src="./image/q.jpg" style="width:400px">
+        <p></p>
+        100台北市中正區濟南路一段321號
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;電話(04)318756
+        傳真(05)3123698
+        <hr class="a">
+        <h3>
+            <p>華山店</p>
+        </h3>
+        <img src="./image/q2.jpg" style="width:400px">
+        <p></p>
+        100台北市中正區八德路一段1號
+        <a href="https://goo.gl/maps/8t28mXMABDLcU9xB9">顯示地圖</a>
+        &nbsp;&nbsp;&nbsp;電話(02)3660296
+        傳真(03)3660296
+        <hr class="a">
+        <h3>
+            <p>中正店</p>
+        </h3>
+        <img src="./image/q4.jpg" style="width:420px">
+        <p></p>
+        100台北市中正區中山南路7號
+        <a href="https://goo.gl/maps/6CfHA4SyVgihZLDi6">顯示地圖</a>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;電話
+        (04)3103656
+        傳真
+        (05)3101698
+        <hr class="a">
+        <h3>
+            <p> 建國店</p>
+        </h3>
+        <img src="./image/q5.jpg" style="width:400px">
+        <p></p>
+        10489台北市中山区建國北路一段96號
+        <a href="https://goo.gl/maps/wJ8pGNNyNv7Qm8N77">顯示地圖</a>
+        &nbsp;&nbsp;&nbsp;電話(04)3102756
+        傳真05)3101698
+        <hr class="a">
+        <h3>
+            <p> 松江店</p>
+        </h3>
+        <img src="./image/q6.jpg" style="width:400px">
+        <p></p>
+        104台北市中山區松江路126號
+        <a href="https://goo.gl/maps/XaBXYNcvdM1sGKzv9">顯示地圖</a>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;電話(04)318956
+        傳真(05)3101698
+        <p></p>
+        <hr class="a">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3614.769504621341!2d121.52343161391171!3d25.041895144131274!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442a970a11a84ad%3A0x58e05f2528812097!2z5ZyL56uL6Ie65YyX5ZWG5qWt5aSn5a24!5e0!3m2!1szh-TW!2stw!4v1558728854787!5m2!1szh-TW!2stw" width="600" height="450" frameborder="0" style="border:0" allowfullscreen width="400" height="300"></iframe>濟南店
+        <br>
+        <br>
+        <p>營業時間</p>
+        週一~週五 早上08:00~下午3:00<br>
+        週六~週日 早上09:00~晚上21:00
+    </div>
+
+    
+    </div>
+    <div  class="footer">總公司地址：100台北市中正區濟南路一段321號
+
+      <a href="https://www.facebook.com/NTUB1917/"><img src="image/facebook.png" width="50" heigh="50"></a>
+      <a href="https://www.instagram.com/explore/tags/%E5%9C%8B%E7%AB%8B%E8%87%BA%E5%8C%97%E5%95%86%E6%A5%AD%E5%A4%A7%E5%AD%B8/top/"><img src="image/instagram.png" width="50" heigh="50" ></a>
+    </div>
+
+    <script src="https://www.gstatic.com/firebasejs/6.0.2/firebase-app.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
